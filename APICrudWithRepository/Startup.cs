@@ -36,6 +36,7 @@ namespace APICrudWithRepository
 
             //Inject service
             services.AddTransient<IProduct, ProductServices>();
+            services.AddTransient<IUser, AccountService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
